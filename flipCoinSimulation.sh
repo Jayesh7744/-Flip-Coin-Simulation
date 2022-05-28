@@ -1,40 +1,5 @@
 echo "welcome to the flip coin simultion"
 
-randomcheck=$(( RANDOM%2 ))
-echo "randomcheck:" $randomcheck
-if((randomcheck==1))
-then
-	echo "Head"
-else
-	echo "Tail"
-fi
-
-
-Head=1
-Headcount=0
-Tailcount=0
-for((i=1 ; i<=21 ; i++))
-do
-  if((randomcheck=$((RANDOM%2))))
-  then
-	randomcheck=$((randomcheck==1))
-	Headcount=$(($Headcount + 1))
-        echo "Head"
-  else
-        Tailcount=$(($Tailcount + 1))
-	echo "Tail"
-  fi
-done
-echo "Headcount:" $Headcount
-echo "Tailcount:" $Tailcount
-
-  if(($Headcount>$Tailcount))
-  then
-	echo "Head_won:" $Headcount
-  else
-	echo "Tail_won:" $Tailcount
-  fi
-
 Head=1
 Tail=0
 Hcount=0
